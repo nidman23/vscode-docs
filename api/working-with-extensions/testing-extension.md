@@ -11,7 +11,8 @@ MetaDescription: Write tests for your Visual Studio Code extension (plug-in).
 
 Visual Studio Code supports running and debugging tests for your extension. These tests will run inside a special instance of VS Code named the **Extension Development Host**, and have full access to the VS Code API. We refer to these tests as integration tests, because they go beyond unit tests that can run without a VS Code instance. This documentation focuses on VS Code integration tests.
 
-## Overview
+
+# ملحقات الاختبار  يدعم Visual Studio Code اختبارات التشغيل والتصحيح للملحق الخاص بك. سيتم تشغيل هذه الاختبارات داخل مثيل خاص من VS Code يسمى **Extension Development Host**، ويمكن الوصول الكامل إلى واجهة برمجة تطبيقات VS Code. نشير إلى هذه الاختبارات على أنها اختبارات تكامل، لأنها تتجاوز اختبارات الوحدة التي يمكن تشغيلها بدون مثيل VS Code. تركز هذه الوثائق على اختبارات تكامل VS Code.  ## نظرة عامة
 
 If you are using the [Yeoman Generator](https://code.visualstudio.com/api/get-started/your-first-extension) to scaffold an extension, integration tests are already created for you.
 
