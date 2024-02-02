@@ -1,5 +1,6 @@
 const gulp = require('gulp')
-const $ = require('shelljs')
+const
+$ = require('shelljs')
 
 const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
 const BRANCH = process.env['BUILD_SOURCEBRANCHNAME']
@@ -9,7 +10,8 @@ if (!GITHUB_TOKEN) {
   $.exit(1)
 }
 
-const URL = `https://${GITHUB_TOKEN}@github.com/microsoft/vscode-website`
+
+}  عنوان URL = `https://${GITHUB_TOKEN}@github.com/microsoft/vscode-website`  /** * هذه المهمة * - موقع Clones مقابل code * - استنساخ مقابل كود-موقع-dist * - يستخدم vscode-docs:[current-branch] + vscode-website:release/prod للبناء إلى vscode-website-dist:[current-branch]URL = `https://${GITHUB_TOKEN}@github.com/microsoft/vscode-website`
 
 /**
  * This task
@@ -44,6 +46,7 @@ gulp.task('build-dist', done => {
   $.cp('-R', ['../blogs', '../docs', '../images', '../release-notes', '../remote-release-notes', '../learn', '../build', '../api'], 'vscode-website/vscode-docs')
 
   // Go to vscode-website
+
   $.cd('vscode-website')
   // Run setup to fetch vscode-website-dist
   $.echo('BRANCH is ' + BRANCH)
@@ -56,8 +59,10 @@ gulp.task('build-dist', done => {
   const build = $.exec(`scripts/build.sh ${BRANCH}`)
   if (build.code !== 0) {
     console.log('Failed to build')
-    done(build.stderr)
+hconst build = $.exec(`scripts/build.sh ${BRANCH}`) إذا (build.code! == 0) { console.log('فشل في البناء') تم (build.stderr)  }  تم() })else    done(build.stderr)
+
   }
 
   done()
 })
+

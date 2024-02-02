@@ -47,6 +47,7 @@ To contribute new topics/information or make changes to existing documentation, 
 
 The two suggested workflows are:
 
+### سير العمل  سير العمل المقترحان هما:  - للتغييرات الصغيرة، استخدم زر "تحرير" في كل صفحة لتحرير ملف Markdown مباشرة على GitHub. - إذا كنت تخطط لإجراء تغييرات كبيرة أو معاينة ملفات Markdown في VS Code، [clone](#cloning) repo to [edit and preview](https://code.visualstudio.com/docs/languages/markdown) الملفات مباشرة في VS Code.
 - For small changes, use the "Edit" button on each page to edit the Markdown file directly on GitHub.
 - If you plan to make significant changes or preview the Markdown files in VS Code, [clone](#cloning) the repo to [edit and preview](https://code.visualstudio.com/docs/languages/markdown) the files directly in VS Code.
 
@@ -59,7 +60,8 @@ The two suggested workflows are:
 3. SSH auth: `git clone git@github.com:microsoft/vscode-docs.git`<br>HTTPS auth: `git clone https://github.com/microsoft/vscode-docs.git`
 4. Now you can `git add` binary files and commit them. They'll be tracked in LFS.
 
-#### Cloning without binary files
+
+لكل آلة. 3. SSH auth: `git clone git@github.com:microsoft/vscode-docs.git`<br>HTTPS auth: `git clone https://github.com/microsoft/vscode-docs.git` 4. الآن يمكنك "git add" الملفات الثنائية والالتزام بها. سيتم تتبعهم في LFS.  #### الاستنساخ بدون ملفات ثنائية  قد ترغب في استنساخ الريبو بدون صور 1.6 جيجابايت. إليك الخطوات:  1. قم بتثبيت [Git LFS](https://git-lfs.github.com/).s
 
 You might want to clone the repo without the 1.6GB images. Here are the steps:
 
@@ -83,5 +85,6 @@ The history of this repo before we adopted LFS can be found at [microsoft/vscode
 ## Publishing
 
 Steps for how to publish documentation changes can be found [here](https://github.com/microsoft/vscode-website#publishing-a-documentation-change) in the (private) repository of the VS Code website.
+
 
 Publishing merged pull requests is not automatic and is initiated manually after changes have been reviewed on an internal staging server. There is no specific time guarantee for when PR updates will be available on https://code.visualstudio.com but the intent is that they will usually be live within 24 hours.
